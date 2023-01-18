@@ -54,8 +54,8 @@ public class Pizza {
 
     public void addTakeaway(){
       // adding takeaway means taking paper bag
-        priceArray[3]+=20;
-        priceArray[4]+=20;
+        if(priceArray[3]==0) priceArray[4]+=20;
+        priceArray[3]=20;
     }
 
     public String getBill(){
@@ -67,7 +67,7 @@ public class Pizza {
           s+="Extra Toppings Added: "+priceArray[2]+"\n";
         if(priceArray[3]!=0)
            s+="Paperbag Added: 20\n";
-        s+="Total Price: "+priceArray[4]+"\n";
+        s+="Total Price: "+priceArray[4 ]+"\n";
         this.bill=s;
         return this.bill;
     }

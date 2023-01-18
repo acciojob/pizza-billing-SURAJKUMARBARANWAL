@@ -3,17 +3,16 @@ package com.driver;
 public class Main {
   public static void main(String[] args) {
 
-    DeluxePizza dp = new DeluxePizza(0,true);
-    System.out.println(dp.getPrice());
+    Pizza dp = new Pizza(0,true);
     dp.addTakeaway();
     dp.addExtraCheese();
     dp.addTakeaway();
+    dp.addExtraToppings();
     System.out.println(dp.getBill());
 
-    Pizza p = new Pizza(1,true);
+    Pizza p = new Pizza(1,false);
     p.addExtraCheese();
     p.addExtraToppings();
-    p.addTakeaway();
     System.out.println(p.getBill());
   }
 }
