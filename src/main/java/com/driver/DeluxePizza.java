@@ -2,8 +2,9 @@ package com.driver;
 
 public class DeluxePizza extends Pizza {
 
-    public DeluxePizza(Boolean isVeg) {
-        super(isVeg);
+    public DeluxePizza(int tag,Boolean isVeg) {
+        super(tag,isVeg);
         // your code goes here
     }
+
 }
